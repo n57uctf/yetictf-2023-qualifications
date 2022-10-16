@@ -13,7 +13,7 @@ services:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=logger
       - POSTGRES_IPADDR=db
-      - FLAG=YetiCTF{flag}
+      - FLAG=YetiCTF{aDM1n_LUB17_P1v0}
     depends_on:
       - db
 
