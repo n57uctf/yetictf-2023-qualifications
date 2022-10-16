@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="d-flex justify-content-center">
+    <p class="fs-1">Your loggers</p>
+</div>
+<div class="d-flex justify-content-center">
+    <div class="w-50 m-3 p-3 border border-secondary rounded-3">
+        <p class="fs-3">Create new logger</p>
+        <form action="/" method="post">
+            <label for="logger_name" class="form-label mt-3">Logger name</label>
+            <input type="text" id="logger_name" name="logger_name" class="form-control">
+            <input type="submit" value="Create" class="btn btn-primary mt-3">
+        </form>
+    </div>
+</div>
+
+<div class="d-flex justify-content-center">
+    <div class="w-50">
+        <p class="fs-1">Logs</p>
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Link</th>
+      <th scope="col">IP</th>
+      <th scope="col">User agent</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for record in report %}
+    <tr>
+      <th scope="row">{{ record['id'] }}</th>
+      <td>{{ record['name'] }}</td>
+      <td class="link">{{ record['link'] }}</td>
+      <td>{{ record['ip'] }}</td>
+      <td>{{ record['user_agent'] }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+    </div>
+</div>
+{% if flag %}
+    {{ flag }}
+{% endif %}
+<script>
+    const x = document.querySelectorAll("td.link");
+    for (el of x) {
+        el.innerText = window.location.href + 'redirect/' + el.innerText
+    }
+</script>
+{% endblock %}
