@@ -1,0 +1,1 @@
+INSERT INTO files (owner_, name, content, size, create_date) VALUES(%(owner_)s, %(name)s, %(content)s, %(size)s, %(create_date)s)
