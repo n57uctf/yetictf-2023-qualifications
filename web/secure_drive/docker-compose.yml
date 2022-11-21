@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+
+  db:
+    image: postgres:14.5
+    environment:
+      POSTGRES_DB: "postgres"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "qweasdzxc1"
+    restart: always
+    networks:
+      - custom
+      
+  web:
+    build:
+      context: .
+    environment:
+      FLAG: "YetiCTF{L1v3_l1kE_a_f1dg37}"
+    depends_on: 
+      - db
+    restart: always
+    ports:
+      - "8000:15400"
+    networks:
+     - custom
+    
+networks:
+  custom:
+    driver: bridge

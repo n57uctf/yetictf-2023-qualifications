@@ -1,0 +1,89 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<html>
+   <head>
+      <title>Disk</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+      <style>
+         body{
+            background: url("https://lovelytab.com/wp-content/uploads/2019/01/253970-min.jpg");
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            background-size: cover;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container-fluid d-flex justify-content-center">
+         <div class="col-8">
+            <div class="row">
+               <div class="col-10 text-break">
+                  <text style="word-break: break-all" type = "str" name = "emd6">Отпечаток вашего ключа в SHA-256: 8e35c2cd3bf6641bdb0e2050b76932cbb2e6034a0ddacc1d9bea82a6ba57f7cf</text><br>
+                  <text type = "str" name = "emd6">Вы авторизованы под пользователем: {{username}}</text>                  
+               </div>
+               <div class="col-2 text-center">
+                  <form action="/login" enctype="multipart/form-data" method="GET">
+                     <input type="submit" name="action" class="btn btn-danger" value="Logout" multiple><br>
+                  </form>
+               </div>
+            </div>
+            
+            
+            
+            <form action="/file" enctype="multipart/form-data" method="POST">
+               <div class="row">
+                  <div class="col-10">
+                     <input class="form-control" type="file" name="files" multiple><br>
+                  </div>
+                  <div class="col-2 text-center">
+                     <input type="submit" name="action" class="btn btn-success" value="Upload File" multiple>
+                  </div>
+                  <div class="col-10">
+                     <input class="form-control" placeholder= "Чтобы загрузить файл, введите пароль:"type="password" name="passw" value="" required><br>
+                  </div>
+                  <div class="col-2 text-center">
+                     <text type = "str" name = "invalpass">{{invalpass}}</text>
+                  </div>
+               </div>
+               <div>
+
+               </div>
+            </form>
+            
+            
+            
+            <form action="/file" enctype="multipart/form-data" method="GET">
+                     <input class="form-control" placeholder= "Чтобы скачать расшифрованный файл, введите пароль, или оставьте поле пустым для скачивания зашифрованного файла:" type="password" name="passw" value=""><br>
+               <table class="table table-dark table-striped table-bordered table-dark table-hover">
+                  <thead>
+                     <tr>
+                        <th>ID</th>
+                        <th>Имя</th>
+                        <th>Размер в байтах</th>
+                        <th>Дата загрузки</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     {% if massiv %}
+                        {% for value in massiv%}
+                        <tr>
+                           {% for val in value%}
+                              {% if val == "file_id" %}
+                                 <td><input class="btn btn-outline-light" type="submit" name="id" value={{value[val]}} ></td>
+                              {% elif val == "owner_id" %}
+                              {% else %}
+                                 <td>{{value[val]}}</td>
+                              {%endif%}
+                           {%endfor%}
+                        </tr>
+                        {%endfor%}
+                     {% else %}
+                        <p>В таблице нет записей!</p>
+                     {% endif %}
+                  </tbody>
+               </table>
+            </form>
+         </div>
+      </div>
+   </body>
+</html>
