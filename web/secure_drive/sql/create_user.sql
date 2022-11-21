@@ -1,0 +1,1 @@
+INSERT INTO users (login, password) VALUES(%(login)s, %(password)s)
