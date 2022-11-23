@@ -1,0 +1,20 @@
+name: "IP logger"
+author: "@amigo2208"
+category: web
+description: "[@amigo2208](https://t.me/amigo2208)<br><br>Нашел в киберпространстве интересный датафрейм, и мне кажется что admin что-то скрывает."
+value: 100
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+connection_info: http://158.160.44.178:8021/
+
+flags:
+    - YetiCTF{aDM1n_LUB17_P1v0}
+
+state: hidden
+
+version: "0.1"

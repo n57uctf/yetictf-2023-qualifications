@@ -1,0 +1,20 @@
+name: "Secure Drive"
+author: "@Никитa#8022"
+category: web
+description: "Discord: Никитa#8022<br><br>Наверное тренд на сервис 'защищенное хранилище' ней уйдет никогда. Вы знаете что делать... "
+value: 100
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+connection_info: http://158.160.44.178:8000/
+
+flags:
+    - YetiCTF{L1v3_l1kE_a_f1dg37}
+
+state: hidden
+
+version: "0.1"
