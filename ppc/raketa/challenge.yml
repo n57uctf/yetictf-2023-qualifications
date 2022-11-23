@@ -1,0 +1,20 @@
+name: "raketa"
+
+author: "@RegularITCat"
+
+category: ppc
+
+description: "[@RegularITCat](https://t.me/RegularITCat)<br><br>Лазяя по дарквебу нашёл интересный проект. Посмотришь? nc IP_ADDRESS PORT"
+
+value: 100
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+flags:
+    - YetiCTF{7510lk0v5k1y_15_7h3_b357_h4ck3r?}
+
+version: "0.1"

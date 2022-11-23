@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+        task:
+                build: ./src/
+                ports:
+                        - "8181:8181"
+                environment:
+                        - RAKETA_LISTEN_ADDRESS=:8181
+                        - RAKETA_DB_FILE_PATH=./db.json
+                        - RAKETA_ELEVATE_COST=1000
+                        - RAKETA_FLAG=YetiCTF{7510lk0v5k1y_15_7h3_b357_h4ck3r?}
