@@ -11,7 +11,7 @@ extra:
     minimum: 100
 
 flags:
-    - 
+    - "YetiCTF{C4c4tu4sB1t2_ByF0nkGroup}"
 
 hints:
     - {

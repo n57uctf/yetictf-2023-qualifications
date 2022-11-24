@@ -17,4 +17,4 @@
 
 **Флаг**
 
-```  YetiCTF{C4c4tu4_B1t2}  ```
+```  YetiCTF{C4c4tu4sB1t2_ByF0nkGroup}  ```
