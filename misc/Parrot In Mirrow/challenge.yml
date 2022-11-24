@@ -1,0 +1,31 @@
+name: "Parrot in Mirrow"
+author: "@avsjanka"
+category: misc
+description: "[@avsjanka](https://t.me/Avsjanka)<br><br> Что скрывается в этом замученном работой и делами попугае..."
+value: 150
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+flags:
+    - "YetiCTF{P4rrotP4n1c}"
+
+hints:
+    - {
+        content: "Тут бы фильтров накрутить",
+        cost: 31337
+    }
+    - {
+        content: ""Используйте фасольгуляет, если ea - в слове фасоль превратились в i",
+        cost: 31337
+    }
+
+files:
+    - files/Look_at_me.jpg
+
+state: hidden
+
+version: "0.1"
