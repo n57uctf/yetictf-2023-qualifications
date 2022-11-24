@@ -1,0 +1,31 @@
+name: "Quartet"
+author: "@avsjanka"
+category: misc
+description: "[@avsjanka](https://t.me/Avsjanka)<br><br> Квартер под название Cacatuas имеет очень интересные композиции, изучите обложку их альбома там точто есть что-то интересное. Возможно вам поможет какой-то бит .."
+value: 100
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+flags:
+    - 
+
+hints:
+    - {
+        content: "Вы слышали о плоскости?",
+        cost: 31337
+    }
+    - {
+        content: "Стоит обратить внимание на биты в поскости и быть достаточно усердным.",
+        cost: 31337
+    }
+
+files:
+    - files/162.sal
+
+state: hidden
+
+version: "0.1"
