@@ -1,0 +1,29 @@
+name: "I believe I can fly"
+author: "@phalanger2412"
+category: OSINT
+description: "[@phalanger2412](https://t.me/phalanger2412)<br><br>YT921. Когда Utair объявили о заключении контракта на поставку 20 таких самолетов? <br><br>Формат флага: YetiCTF{00-00-0000}"
+value: 100
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+connection_info: http://158.160.44.178:8021/
+
+files:
+    - files/logo.png
+
+flags:
+    - YetiCTF{00-00-0000}
+
+hints:
+    - {
+        content: "А гуглишь точно правильно?",
+        cost: 31337
+    }
+
+state: hidden
+
+version: "0.1"
