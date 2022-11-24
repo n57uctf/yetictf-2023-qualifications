@@ -10,8 +10,6 @@ extra:
     decay: 10
     minimum: 100
 
-connection_info: http://158.160.44.178:8021/
-
 flags:
     - YetiCTF{d1d_y0U_3XP3ct_t0_f1nD_me_0N_Reddit?}
 
