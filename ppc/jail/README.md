@@ -31,5 +31,5 @@ help(__name__)
 ### Флаг
 
 ```
-YetiCTF{aDM1n_LUB17_P1v0}
+YetiCTF{ju5T_c1A55iC_Ja1l}
 ```
