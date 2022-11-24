@@ -1,0 +1,31 @@
+name: "STEGOSTEGASAUR"
+author: "@avsjanka"
+category: misc
+description: "[@avsjanka](https://t.me/Avsjanka)<br><br> Проследите эволюцию этого чудесного динозавра, в ней есть что-то интересное."
+value: 200
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+flags:
+    - "YetiCTF{Steg4n0s4ur_L0ve_Steg4n0}"
+
+hints:
+    - {
+        content: "Используйте фасольгуляет, если ea - в слове фасоль превратились в i",
+        cost: 31337
+    }
+    - {
+        content: "Пароль надо как-то использовать в картинке",
+        cost: 31337
+    }
+
+files:
+    - files/Pretty_D1n0.mp4
+
+state: hidden
+
+version: "0.1"

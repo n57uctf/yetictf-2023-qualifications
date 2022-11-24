@@ -1,0 +1,34 @@
+name: "Coil Way"
+author: "@avsjanka"
+category: crypto
+description: |
+    [@avsjanka](https://t.me/Avsjanka)
+
+    Вам дан шифр основанный на старинных принципах. Ключ это средний(M) элемент логического силлогизма обратной Z формы. Алгоритм вам представлен в файле, а результат загадочные цифры.
+    
+    Сам логический силогизм:
+    All Pachycephalosaurs are dinosaurs.
+    The found skeleton belongs to a Pachycephalosaur.
+    ———————————————————————-
+    The found skeleton belongs to a dinosaur.
+
+value: 100
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+flags:
+    - "YetiCTF{6O1LW4Y}"
+
+hints:
+   
+files:
+    - files/Program.cs
+    - files/Result.txt
+
+state: hidden
+
+version: "0.1"
