@@ -3,7 +3,6 @@
 ## Well, hope u enjoyed :3
 
 + **Category:**
-  + **PPC**
   + **HARDWARE**
 
 + **Author:**
