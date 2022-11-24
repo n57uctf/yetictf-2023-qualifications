@@ -1,0 +1,24 @@
+name: "Margo3.0"
+author: "@phalanger2412"
+category: OSINT
+description: "[@phalanger2412](https://t.me/phalanger2412)<br><br>Ну а что? Это уже традиция, можно сказать. Где опять она могла спрятать этот флаг...<br><br>Вводные данные: Марго Куколевская"
+value: 100
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+flags:
+    - YetiCTF{d1d_y0U_3XP3ct_t0_f1nD_me_0N_Reddit?}
+
+hints:
+    - {
+        content: "Проверь все соц сети(русские и зарубежные), где не нужен ВПН",
+        cost: 31337
+    }
+
+state: hidden
+
+version: "0.1"
