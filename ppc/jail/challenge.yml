@@ -1,0 +1,23 @@
+name: "PyJail"
+author: "@amigo2208"
+category: ppc
+description: "[@amigo2208](https://t.me/amigo2208)<br><br>Небольшая разминка."
+value: 100
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+connection_info: tcp://158.160.44.178:8420/
+
+files:
+    - ./main.py
+
+flags:
+    - YetiCTF{ju5T_c1A55iC_Ja1l}
+
+state: hidden
+
+version: "0.1"

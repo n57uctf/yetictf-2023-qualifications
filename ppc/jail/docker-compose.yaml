@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    restart: always
+    command: socat TCP-LISTEN:8000,reuseaddr,fork EXEC:'python3 main.py',pipes
+    volumes:
+      - .:/app
+    ports:
+      - 8420:8000
+    environment:
+      - FLAG=YetiCTF{ju5T_c1A55iC_Ja1l}
