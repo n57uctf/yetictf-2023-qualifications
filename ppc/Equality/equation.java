@@ -43,7 +43,6 @@ public static long mod(long a, long deg, long p){
     public static long shag(long a, long b, long p){
         int m, k;
         m = k = (int)(Math.sqrt(p))+1;
-        System.out.println(m);
         int x;
         ArrayList<Long> a_deg = new ArrayList<>();
         ArrayList<Long> b_deg = new ArrayList<>();

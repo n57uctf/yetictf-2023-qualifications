@@ -18,7 +18,7 @@ class RequestProcessor extends Thread //for multi-threaded server
             BufferedWriter out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
-            String x = "We will send you equation type of a^x = b mod p\n";
+            String x = "We will send you equation type of a^x = b mod p \n";
             String y;
             equation eq;
             int i = 0;
