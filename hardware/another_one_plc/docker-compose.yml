@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+        task:
+                restart: always
+                build: ./app/
+                ports:
+                        - "9600:9600/udp"
+                environment:
+                        - ANOTHER_ONE_PLC_IP=0.0.0.0
+                        - ANOTHER_ONE_PLC_PORT=9600
+                        - ANOTHER_ONE_PLC_FLAG=YetiCTF{175_71m3_70_5ub5cr1b3_70_ru5c4d453c}

@@ -1,0 +1,22 @@
+name: "another_one_plc"
+
+author: "@RegularITCat"
+
+category: hardware
+
+description: "[@RegularITCat](https://t.me/RegularITCat)<br><br>'Безопасность АСУТП! Безопасность АСУТП!' - кричат они.. А открытый кишками наружу plc кто защищать будет? Давай расковыряем ка, покажем безопасность АСУТП 😈"
+
+value: 100
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+connection_info: nc -u 158.160.44.178 9600
+
+flags:
+    - YetiCTF{175_71m3_70_5ub5cr1b3_70_ru5c4d453c}
+
+version: "0.1"
