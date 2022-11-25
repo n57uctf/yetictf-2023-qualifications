@@ -1,0 +1,20 @@
+name: "Equality"
+author: "@Lavrentyevs_2"
+category: ppc
+description: "[@Larr1](https://t.me/Larr1)<br><br>Казалось, обычное уровнение, но причем тут модуль? Еще и 10 штук решить надо и ограничение на ответ 3 секунды. nc 158.160.44.178 5050"
+value: 100
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+connection_info: tcp://158.160.44.178:5050/
+
+flags:
+    - YetiCTF{be3r_1s_go0d,_but_cola_is_pr1celess}
+
+state: hidden
+
+version: "0.1"
