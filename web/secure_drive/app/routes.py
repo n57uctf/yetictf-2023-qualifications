@@ -17,7 +17,7 @@ async def get_disk(request: Request, laset: str | None = Cookie(default=None)):
 @app.get("/login", response_class=HTMLResponse)
 def get_login(request: Request, response : Response):
     response = templates.TemplateResponse('./login.html',context={'request': request})
-    response.delete_cookie(key='laset', domain='127.0.0.1')
+    response.delete_cookie(key='laset')
     return response
 
 @app.post("/login")
@@ -30,7 +30,7 @@ async def post_login(request: Request, response: Response, log: str = Form(...),
     elif verify_hash(result.password, passwd):
         print('Success!')
         response = RedirectResponse('/', status_code=status.HTTP_302_FOUND)
-        response.set_cookie(key='laset', value=get_auth_token(log), domain='127.0.0.1')
+        response.set_cookie(key='laset', value=get_auth_token(log))
         return response
     else:
         return templates.TemplateResponse('./login.html', context={'request': request, 'emd6': 'Password incorrect!'})
