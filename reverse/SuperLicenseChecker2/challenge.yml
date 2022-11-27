@@ -1,0 +1,23 @@
+name: "Super license checker 2"
+
+author: "@K1rch"
+
+category: reverse
+
+description: "[@K1rch](https://t.me/K001rch)<br>Я усложнил свою защиту лицензии, попытайтесь найти её ещё раз !<br>"
+
+value: 100
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+flags:
+    - YetiCTF{00000-ZZZZ-9999-AAAA}
+
+files:
+    - SuperLicenseChecker2
+
+version: "0.1"
