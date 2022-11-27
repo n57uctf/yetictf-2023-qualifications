@@ -22,6 +22,7 @@ docker compose up --build
 Отправляем
 ```
 help(__name__)
+help(flag) - для обновленного таска
 ```
 
 ### Описание
