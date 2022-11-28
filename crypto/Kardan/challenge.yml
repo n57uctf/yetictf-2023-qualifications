@@ -1,0 +1,22 @@
+name: "Kardan"
+author: "@Larr1 "
+category: crypto
+description: "[@Larr1](https://t.me/Larr1)<br>Однажды я взял старую волгу у своего деда. Катался боком по парковке, но кардан не выдержал и рассыпался. Не могу его собрать.<br>"
+
+value: 100
+type: dynamic
+
+extra:
+    initial: 1000
+    decay: 10
+    minimum: 100
+
+flags:
+    - Yeti_CTF{You_unLoCkE_ThiS_KoD}
+
+files:
+    - Flag.txt
+
+state: hidden
+
+version: "0.1"
